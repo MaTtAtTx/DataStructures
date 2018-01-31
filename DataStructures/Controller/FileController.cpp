@@ -10,7 +10,7 @@
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
-    std :: vector<CrimeData> crimeVector;
+    vector<CrimeData> crimeVector;
     string currentCSVLine;
     int rowCount = 0;
     
@@ -28,8 +28,11 @@ vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
             if (rowCount != 0)
             {
                 //Create a CrimeData instance from the line.
-                CrimeData row(currentCSVLine);
-                crimeVector.push_back(row);
+                if (currentCSVLine.length() != 0)
+                {
+                    CrimeData row(currentCSVLine);
+                    crimeVector.push_back(row);
+                }
             }
             rowCount++;
         }
