@@ -19,15 +19,6 @@ void Controller :: start()
     codeTimer.stopTimer();
     codeTimer.displayInformation();
     
-    codeTimer.resetTimer();
-    codeTimer.startTimer();
-    for (int index = 0; index < 100; index++)
-    {
-        cout << "The index is " << index << "\t";
-    }
-    codeTimer.stopTimer();
-    codeTimer.displayInformation();
-    
     FileController crimeTest;
-    crimeTest.readCrimeDataToVector("crime.csv");
+    crimeTest.readCrimeDataToVector("/Users/mjoh7008/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
 }
