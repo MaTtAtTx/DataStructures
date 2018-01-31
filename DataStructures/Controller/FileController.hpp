@@ -11,7 +11,6 @@
 
 #include "Data/CrimeData.hpp"
 
-#include <stdio.h>
 #include <string>
 #include <fstream>
 #include <iostream>
@@ -22,6 +21,7 @@ using namespace std;
 
 class FileController
 {
-    
+public:
+    static vector<CrimeData> readCrimeDataToVector(string filename);
 };
 #endif /* FileController_hpp */

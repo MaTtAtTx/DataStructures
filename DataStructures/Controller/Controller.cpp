@@ -27,4 +27,7 @@ void Controller :: start()
     }
     codeTimer.stopTimer();
     codeTimer.displayInformation();
+    
+    FileController crimeTest;
+    crimeTest.readCrimeDataToVector("crime.csv");
 }
