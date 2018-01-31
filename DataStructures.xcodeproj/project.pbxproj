@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0DF9582220220BF200CA7042 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DF9582020220BF200CA7042 /* Controller.cpp */; };
 		0DF9582420220BFC00CA7042 /* Runner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DF9582320220BFC00CA7042 /* Runner.cpp */; };
+		0DF9582820220F1A00CA7042 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0DF9582620220F1A00CA7042 /* Timer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		0DF9582020220BF200CA7042 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
 		0DF9582120220BF200CA7042 /* Controller.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
 		0DF9582320220BFC00CA7042 /* Runner.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Runner.cpp; sourceTree = "<group>"; };
+		0DF9582620220F1A00CA7042 /* Timer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Timer.cpp; sourceTree = "<group>"; };
+		0DF9582720220F1A00CA7042 /* Timer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Timer.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 		0DF9582520220D9400CA7042 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0DF9582620220F1A00CA7042 /* Timer.cpp */,
+				0DF9582720220F1A00CA7042 /* Timer.hpp */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DF9582820220F1A00CA7042 /* Timer.cpp in Sources */,
 				0DF9582220220BF200CA7042 /* Controller.cpp in Sources */,
 				0DF9582420220BFC00CA7042 /* Runner.cpp in Sources */,
 			);
