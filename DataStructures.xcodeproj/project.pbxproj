@@ -87,6 +87,7 @@
 		0DF9581720220B8400CA7042 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				0DF0C7B22024BFA600A05D33 /* Model */,
 				0DF9582C2022194200CA7042 /* Data */,
 				0DF9581F20220BE400CA7042 /* Controller */,
 				0DF9582320220BFC00CA7042 /* Runner.cpp */,
@@ -118,7 +119,6 @@
 		0DF9582C2022194200CA7042 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				0DF0C7B22024BFA600A05D33 /* Model */,
 				0DF958332022200400CA7042 /* CrimeData.cpp */,
 				0DF958312022200400CA7042 /* CrimeData.hpp */,
 				0DF958322022200400CA7042 /* crime.csv */,
