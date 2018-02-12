@@ -58,6 +58,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D40B5502031F8F100B3F302 /* Linear */ = {
+			isa = PBXGroup;
+			children = (
+				0DF0C7B52024C0BD00A05D33 /* Array.hpp */,
+				0D0E803D202CB317001B924B /* List.hpp */,
+			);
+			path = Linear;
+			sourceTree = "<group>";
+		};
+		0D40B5512031F94C00B3F302 /* NonLinear */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NonLinear;
+			sourceTree = "<group>";
+		};
 		0DF0C7B22024BFA600A05D33 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,8 +86,8 @@
 		0DF0C7B32024BFB400A05D33 /* Structures */ = {
 			isa = PBXGroup;
 			children = (
-				0DF0C7B52024C0BD00A05D33 /* Array.hpp */,
-				0D0E803D202CB317001B924B /* List.hpp */,
+				0D40B5512031F94C00B3F302 /* NonLinear */,
+				0D40B5502031F8F100B3F302 /* Linear */,
 			);
 			path = Structures;
 			sourceTree = "<group>";
