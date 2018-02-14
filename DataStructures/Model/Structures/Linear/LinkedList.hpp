@@ -125,7 +125,7 @@ Type LinkedList<Type> :: remove(int index)
     if (index == 0)
     {
         toBeRemoved = front;
-        this->front = this->front->getNextNode;
+        this->front = this->front->getNextNode();
     }
     else
     {
