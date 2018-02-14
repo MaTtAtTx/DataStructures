@@ -107,7 +107,7 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
             previous->setNextNode(toBeAdded);
             toBeAdded->setNextNode(current);
         }
-        this->size++
+        this->size++;
     }
 }
 
@@ -118,7 +118,7 @@ Type LinkedList<Type> :: remove(int index)
     
     LinearNode<Type> * current = front;
     LinearNode<Type> * toBeRemoved = nullptr;
-    LinearNode<Tyep> * previous = nullptr;
+    LinearNode<Type> * previous = nullptr;
     
     Type removedData;
     
