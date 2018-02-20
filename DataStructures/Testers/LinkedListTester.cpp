@@ -39,6 +39,50 @@ void LinkedListTester :: testListBasics()
     cout << numbers.getEnd()->getData() << " is at the end of the list and should be 32567" << endl;
 }
 
+void LinkedListTester :: testListStrings()
+{
+    LinkedList<string> strings;
+    strings.add("Dolphin");
+    cout << strings.getFront()->getData() << " is at the front of the list and should be Dolphin" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Dolphin" << endl;
+    
+    strings.add("Seal");
+    cout << strings.getFront()->getData() << " is at the front of the list and should be Dolphin" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Seal" << endl;
+    
+    strings.addAtIndex(1,"Blue Whale");
+    strings.add("Polar Bear");
+    
+    cout << strings.getFront()->getData() << " is at the front of the list and should be Dolphin" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Polar Bear" << endl;
+    
+    cout <<"This loop should print 4 lines"<< endl;
+    for (int index = 0; index < strings.getSize(); index++)
+    {
+        cout << strings.getFromIndex(index) << endl;
+    }
+    
+    strings.remove(0);
+    strings.add("Walrus");
+    strings.addAtIndex(0,"Arctic Fox");
+    
+    cout << strings.getFront()->getData() << " is at the front of the list and should be Arctic Fox" << endl;
+    cout << strings.getEnd()->getData() << " is at the end of the list and should be Walrus" << endl;
+    
+    cout << "This loop should print out the full list at the end" << endl;
+    for (int index = 0; index < strings.getSize(); index++)
+    {
+        if (index < strings.getSize() - 1)
+        {
+            cout << strings.getFromIndex(index) << ", ";
+        }
+        else
+        {
+            cout << strings.getFromIndex(index) << "." << endl;
+        }
+    }
+}
+
 void LinkedListTester :: testListWithData()
 {
     Timer listTimer;
