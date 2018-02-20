@@ -12,13 +12,13 @@ using namespace std;
 
 void Controller :: start()
 {
-//    ArrayTester myTest;
-//    myTest.testArrayUse();
-//    myTest.testAdvancedArray();
+    ArrayTester myTest;
+    myTest.testArrayUse();
+    myTest.testAdvancedArray();
     LinkedListTester myTests;
-//    myTests.testListBasics();
+    myTests.testListBasics();
     myTests.testListStrings();
-//    myTests.testListWithData();
+    myTests.testListWithData();
     
 //    cout << "Testing the Timer class" << endl;
 //    Timer codeTimer;
