@@ -5,7 +5,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>750</x>
-      <y>220</y>
+      <y>200</y>
       <w>480</w>
       <h>200</h>
     </coordinates>
@@ -28,7 +28,7 @@ LinearNode&lt;Type&gt;
     <id>Relation</id>
     <coordinates>
       <x>950</x>
-      <y>410</y>
+      <y>390</y>
       <w>30</w>
       <h>120</h>
     </coordinates>
@@ -39,7 +39,7 @@ LinearNode&lt;Type&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>800</x>
-      <y>510</y>
+      <y>490</y>
       <w>330</w>
       <h>160</h>
     </coordinates>
@@ -61,7 +61,7 @@ Node&lt;Type&gt;
     <id>UMLClass</id>
     <coordinates>
       <x>180</x>
-      <y>210</y>
+      <y>190</y>
       <w>350</w>
       <h>220</h>
     </coordinates>
@@ -86,7 +86,7 @@ Node&lt;Type&gt;
     <id>Relation</id>
     <coordinates>
       <x>520</x>
-      <y>310</y>
+      <y>290</y>
       <w>250</w>
       <h>50</h>
     </coordinates>
@@ -94,5 +94,61 @@ Node&lt;Type&gt;
 
 m2=0</panel_attributes>
     <additional_attributes>10.0;20.0;230.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>520</y>
+      <w>410</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+LinkedList&lt;Type&gt;
+--
+
+- LinearNode&lt;Type&gt; * : front
+- LinearNode&lt;Type&gt; * : end
+
+--
++ LinkedList() : constructor
++ ~LinkedList() : virtual
+
++ getSize() const : int
++ getFront() : LinearNode&lt;Type&gt; *
++ getEnd() : LinearNode&lt;Type&gt; *
+
++ add(Type item) : void
++ addAtIndex(int index, Type item) : void
++ getFromIndex(int index) : Type
++ remove(int index) : Type
++ setAtIndex(int index, Type item) : Type
++ contains(Type item) : bool
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>400</y>
+      <w>30</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>550</x>
+      <y>360</y>
+      <w>220</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+
+m2=0 - n</panel_attributes>
+    <additional_attributes>10.0;290.0;80.0;290.0;80.0;10.0;200.0;10.0</additional_attributes>
   </element>
 </diagram>
