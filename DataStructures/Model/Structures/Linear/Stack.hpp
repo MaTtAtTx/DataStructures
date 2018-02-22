@@ -69,7 +69,7 @@ void Stack<Type> :: add(Type data)
     push(data);
 }
 
-tmeplate <class Type>
+template <class Type>
 void Stack<Type> :: addAtIndex(int index, Type data)
 {
     assert(index == 0);
@@ -96,6 +96,19 @@ Type Stack<Type> :: remove(int index)
 {
     assert(index == 0);
     return pop();
+}
+
+template <class Type>
+Type Stack<Type> :: peek()
+{
+    return this->getFront()->getData();
+}
+
+template <class Type>
+Type Stack<Type> :: getFromIndex(int index)
+{
+    assert(index == 0);
+    return peek;
 }
 
 #endif /* Stack_hpp */
