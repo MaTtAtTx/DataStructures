@@ -30,4 +30,72 @@ public:
     Type remove(int index);
 };
 
+template <class Type>
+Stack<Type> :: Stack() : LinkedList<Type>()
+{
+    //Empty
+}
+
+template <class Type>
+Stack<Type> :: ~Stack()
+{
+    while(this->size > 0)
+    {
+        pop();
+    }
+}
+
+template <class Type>
+void Stack<Type> :: push(Type data)
+{
+    LinearNode<Type> * add = new LinearNode<Type>(data);
+    
+    if(this->size == 0)
+    {
+        this->end = add;
+    }
+    else
+    {
+        add->setNextNode(this->front);
+    }
+    
+    this->front = add;
+    this->size++;
+}
+
+template <class Type>
+void Stack<Type> :: add(Type data)
+{
+    push(data);
+}
+
+tmeplate <class Type>
+void Stack<Type> :: addAtIndex(int index, Type data)
+{
+    assert(index == 0);
+    push(data);
+}
+
+template <class Type>
+Type Stack<Type> :: pop()
+{
+    assert(this-size > 0);
+    Type removed = this->front->getData();
+    
+    LinearNode<Type> * removedNode = this ->getFront();
+    this->setFront(removedNode->getNextNode());
+    delete removedNode;
+    
+    this->size--;
+    
+    return removed;
+}
+
+template <class Type>
+Type Stack<Type> :: remove(int index)
+{
+    assert(index == 0);
+    return pop();
+}
+
 #endif /* Stack_hpp */
