@@ -35,6 +35,7 @@
 		0D26DDAF2034913800520F8F /* LinkedListTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinkedListTester.cpp; sourceTree = "<group>"; };
 		0D26DDB02034913800520F8F /* LinkedListTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinkedListTester.hpp; sourceTree = "<group>"; };
 		0D2A055E203F13C4003691AE /* Stack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stack.hpp; sourceTree = "<group>"; };
+		0D2A0562203F1E8C003691AE /* Queue.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Queue.hpp; sourceTree = "<group>"; };
 		0DF0C7B52024C0BD00A05D33 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
 		0DF1B5E7202A00240021A295 /* ArrayTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayTester.cpp; sourceTree = "<group>"; };
 		0DF1B5E8202A00240021A295 /* ArrayTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ArrayTester.hpp; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 				0D0E803D202CB317001B924B /* List.hpp */,
 				0D26DDAD2034817500520F8F /* LinkedList.hpp */,
 				0D2A055E203F13C4003691AE /* Stack.hpp */,
+				0D2A0562203F1E8C003691AE /* Queue.hpp */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
