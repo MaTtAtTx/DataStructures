@@ -41,4 +41,60 @@ CircularList<Type> :: CircularList()
     end->setNext(front);
 }
 
+template <class Type>
+CircularList<Type> :: ~CircularList()
+{
+    DoubleNode<Type> * current = front;
+    while (this->front != nullptr)
+    {
+        front = front->getNext();
+        delete current;
+        current = front;
+    }
+}
+
+template <class Type>
+DoubleNode<Type> * CircularList<Type> :: findNode(int index)
+{
+    assert(index >= 0 && index < this->size);
+    DoubleNode<Type> * nodeToFind;
+    
+    if (index < this->size / 2)
+    {
+        nodeToFind = this->front;
+        for (int position = 0; position < index; position++)
+        {
+            nodeToFind = nodeToFind->getNext();
+        }
+    }
+    else
+    {
+        nodeToFind = this->end;
+        for (int position = this->size - 1; position >= index; position--)
+        {
+            nodeToFind = nodeToFind->getPrevious();
+        }
+    }
+    
+    return nodeToFind;
+}
+
+template <class Type>
+void CircularList<Type> :: add(Type item)
+{
+    DoubleNode<Type> * addedNode;
+    if (this->size == 0)
+    {
+        addedNode = new DoubleNode<Type>(item);
+        this->front = addedNode;
+    }
+    else
+    {
+        addedNode = new DoubleNode<Type>(item, this->end, this->front);
+        this->end->setNext(addedNode);
+    }
+    this->end = addedNode;
+    this->size++;
+}
+
 #endif /* CircularList_hpp */
