@@ -100,7 +100,7 @@ m2=0</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>112</x>
-      <y>280</y>
+      <y>294</y>
       <w>287</w>
       <h>224</h>
     </coordinates>
@@ -133,11 +133,12 @@ LinkedList&lt;Type&gt;
     <coordinates>
       <x>238</x>
       <y>238</y>
-      <w>21</w>
-      <h>56</h>
+      <w>49</w>
+      <h>70</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+public</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -145,12 +146,12 @@ LinkedList&lt;Type&gt;
       <x>392</x>
       <y>224</y>
       <w>98</w>
-      <h>161</h>
+      <h>175</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
 m2=0-n</panel_attributes>
-    <additional_attributes>10.0;210.0;70.0;210.0;70.0;10.0;120.0;10.0</additional_attributes>
+    <additional_attributes>10.0;230.0;70.0;230.0;70.0;10.0;120.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
