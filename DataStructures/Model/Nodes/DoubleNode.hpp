@@ -32,15 +32,47 @@ public:
 template <class Type>
 DoubleNode<Type> :: DoubleNode() : Node<Type>()
 {
-    previos = nullptr;
+    previous = nullptr;
     next = nullptr;
 }
 
 template <class Type>
 DoubleNode<Type> :: DoubleNode(Type data) : Node<Type>(data)
 {
-    previos = nullptr;
+    previous = nullptr;
     next = nullptr;
 }
+
+template <class Type>
+DoubleNode<Type> :: DoubleNode(Type data, DoubleNode<Type> * previous, DoubleNode<Type> * next) : Node<Type>(data)
+{
+    this->previous = nullptr;
+    this->next = nullptr;
+}
+
+template <class Type>
+DoubleNode<Type> * DoubleNode<Type> :: getPrevious()
+{
+    return previous;
+}
+
+template <class Type>
+DoubleNode<Type> * DoubleNode<Type> :: getNext()
+{
+    return next;
+}
+
+template <class Type>
+void DoubleNode<Type> :: setPrevious(DoubleNode<Type> * previous)
+{
+    this->previous = previous;
+}
+
+template <class Type>
+void DoubleNode<Type> :: setNext(DoubleNode<Type> * next)
+{
+    this->next = next;
+}
+
 
 #endif /* DoubleNode_hpp */
