@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>7</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
-      <y>385</y>
-      <w>336</w>
-      <h>133</h>
+      <x>576</x>
+      <y>300</y>
+      <w>288</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>bg=cyan
 LinearNode&lt;Type&gt;
@@ -27,10 +27,10 @@ LinearNode&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>609</x>
-      <y>511</y>
-      <w>49</w>
-      <h>77</h>
+      <x>696</x>
+      <y>408</y>
+      <w>42</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -39,10 +39,10 @@ public</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>504</x>
-      <y>574</y>
-      <w>231</w>
-      <h>112</h>
+      <x>606</x>
+      <y>462</y>
+      <w>198</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>bg=green
 Node&lt;Type&gt;
@@ -61,10 +61,10 @@ Node&lt;Type&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>119</x>
-      <y>364</y>
-      <w>245</w>
-      <h>154</h>
+      <x>276</x>
+      <y>282</y>
+      <w>210</w>
+      <h>132</h>
     </coordinates>
     <panel_attributes>bg=#007EFF
 /List&lt;Type&gt;/
@@ -86,10 +86,10 @@ Node&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
-      <y>448</y>
-      <w>126</w>
-      <h>35</h>
+      <x>480</x>
+      <y>354</y>
+      <w>108</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
@@ -99,10 +99,10 @@ m2=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>105</x>
-      <y>567</y>
-      <w>287</w>
-      <h>224</h>
+      <x>264</x>
+      <y>456</y>
+      <w>246</w>
+      <h>192</h>
     </coordinates>
     <panel_attributes>bg=#00BFFF
 LinkedList&lt;Type&gt;
@@ -131,10 +131,10 @@ LinkedList&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>231</x>
-      <y>511</y>
-      <w>49</w>
-      <h>70</h>
+      <x>372</x>
+      <y>408</y>
+      <w>42</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -143,10 +143,10 @@ public</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>497</y>
-      <w>98</w>
-      <h>175</h>
+      <x>504</x>
+      <y>396</y>
+      <w>84</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
@@ -156,34 +156,37 @@ m2=</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>434</x>
-      <y>833</y>
-      <w>161</w>
-      <h>77</h>
+      <x>594</x>
+      <y>744</y>
+      <w>270</w>
+      <h>150</h>
     </coordinates>
-    <panel_attributes>Stack
-bg=red</panel_attributes>
+    <panel_attributes>bg=#357DC0
+Queue
+--
+
+--
++ Queue() : constructor
++ ~Queue() : destructor
+
++ enqueue(Type data) : void
++ dequeue() : Type
++ peek() : Type
++ clear() : void
+
++ add(Type data) : void
++ addAtIndex(int index, Type data) : void
++ getFromIndex(int index) : Type
++ remove(int index) : Type</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>651</x>
-      <y>833</y>
-      <w>161</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>Queue
-bg=red</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>784</x>
-      <y>539</y>
-      <w>490</w>
-      <h>175</h>
+      <x>846</x>
+      <y>432</y>
+      <w>420</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>bg=#00BFAA
 transparency=1
@@ -208,10 +211,10 @@ DoubleNode&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>728</x>
-      <y>609</y>
-      <w>70</w>
-      <h>28</h>
+      <x>798</x>
+      <y>492</y>
+      <w>60</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -220,10 +223,10 @@ public</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>511</x>
-      <y>140</y>
-      <w>287</w>
-      <h>196</h>
+      <x>594</x>
+      <y>84</y>
+      <w>246</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>bg=#00BFFF
 CircularList&lt;Type&gt;
@@ -236,39 +239,91 @@ CircularList&lt;Type&gt;
 + CircularList() : constructor
 + ~CircularList() : destructor
 
-- 
+- findNode(int index) : DoubleNode&lt;Type&gt; *
 
 + add(Type item) : void
 + addAtIndex(int index, Type item) : void
 + remove(int index) : Type
 + getFromIndex(int index) : Type
 + getSize() const : int
++ getFront() : LinearNode&lt;Type&gt; *
++ getEnd() : LinearNode&lt;Type&gt; *
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>266</x>
-      <y>210</y>
-      <w>259</w>
-      <h>168</h>
+      <x>402</x>
+      <y>138</y>
+      <w>204</w>
+      <h>156</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
-    <additional_attributes>10.0;220.0;10.0;10.0;350.0;10.0</additional_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0;320.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>791</x>
-      <y>196</y>
-      <w>308</w>
-      <h>357</h>
+      <x>834</x>
+      <y>132</y>
+      <w>276</w>
+      <h>312</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
 m2=</panel_attributes>
-    <additional_attributes>10.0;20.0;420.0;20.0;420.0;490.0</additional_attributes>
+    <additional_attributes>10.0;20.0;440.0;20.0;440.0;500.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>216</x>
+      <y>762</y>
+      <w>270</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>bg=#357DC0
+Stack
+--
+
+--
++ Stack() : constructor
++ ~Stack() : destructor
+
++ push(Type data) : void
++ pop() : Type
++ peek() : Type
+
++ add(Type data) : void
++ addAtIndex(int index, Type data) : void
++ getFromIndex(int index) : Type
++ remove(int index) : Type</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>606</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+public</panel_attributes>
+    <additional_attributes>10.0;20.0;380.0;20.0;380.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>354</x>
+      <y>642</y>
+      <w>42</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+public</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;200.0</additional_attributes>
   </element>
 </diagram>
