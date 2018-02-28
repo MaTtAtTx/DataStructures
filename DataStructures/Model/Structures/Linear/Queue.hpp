@@ -45,7 +45,7 @@ Queue<Type> :: ~Queue()
 {
     for(LinearNode<Type> * removed = this->front; removed != nullptr; removed = this->front)
     {
-        this->front = removed->getNextNode()
+        this->front = removed->getNextNode();
         delete removed;
     }
 }
@@ -77,14 +77,14 @@ void Queue<Type> :: add(Type item)
 template <class Type>
 void Queue<Type> :: addAtIndex(int index, Type item)
 {
-    assert(index == this->size -1);
+    assert(index == this->size);
     enqueue(item);
 }
 
 template <class Type>
 Type Queue<Type> :: dequeue()
 {
-    assert(this->size > 0)
+    assert(this->size > 0);
     
     Type returned = this->front->getData();
     
@@ -115,7 +115,7 @@ Type Queue<Type> :: remove(int index)
 }
 
 template <class Type>
-Type Queue<Tpye> :: peek()
+Type Queue<Type> :: peek()
 {
     assert(this->size > 0);
     return this->getFront()->getData();
