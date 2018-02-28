@@ -97,9 +97,44 @@ void TestingStacksAndQueues :: stackVersusQueue()
         cout << "Queue result: " << queue.dequeue() << endl;
         cout << "Stack result: " << stack.pop() << endl;
     }
+    
+    for (int index = 0; index < 10; index++)
+    {
+        queue.enqueue(index);
+        stack.push(index);
+    }
+    
+    for (int index = 0; index < 10; index++)
+    {
+        cout << index << endl;
+        cout << "Queue result: " << queueFromStack.dequeue() << endl;
+        cout << "Stack result: " << stackFromQueue.pop() << endl;
+    }
 }
 
 void TestingStacksAndQueues :: queueVersusList()
 {
+    Queue<string> wordQueue;
+    LinkedList<string> wordList;
     
+    wordQueue.add("first");
+    wordQueue.add("second");
+    wordQueue.add("third");
+    wordQueue.add("fourth");
+    wordQueue.add("fifth");
+    
+    wordList.add("first");
+    wordList.add("second");
+    wordList.add("third");
+    wordList.add("fourth");
+    wordList.add("fifth");
+    
+    cout << "Queue: " << wordQueue.getFromIndex(0) << " versus List: " << wordList.getFromIndex(0) << endl;
+    cout << "Here is the in order removal in a queue:" << endl;
+    wordQueue.clear();
+    cout << "Here is the backwards order removal in a list:" << endl;
+    for (int index = wordList.getSize() - 1; index >= 0; index--)
+    {
+        cout << wordList.remove(index) << endl;
+    }
 }
