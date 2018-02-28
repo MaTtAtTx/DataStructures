@@ -104,6 +104,9 @@ void TestingStacksAndQueues :: stackVersusQueue()
         stack.push(index);
     }
     
+//    LinkedList<int> * queuePointer = &queue;
+//    cout << "Queue size: " << queuePointer -> getSize() << endl;
+    
     for (int index = 0; index < 10; index++)
     {
         cout << index << endl;
