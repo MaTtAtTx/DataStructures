@@ -28,6 +28,7 @@ void Controller :: start()
     
     RecursionTester myTest4;
     myTest4.testRecursionNumbers();
+    myTest4.testRecursionString();
     
 //    cout << "Testing the Timer class" << endl;
 //    Timer codeTimer;
