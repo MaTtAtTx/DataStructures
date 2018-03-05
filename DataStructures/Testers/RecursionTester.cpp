@@ -16,7 +16,7 @@ int RecursionTester :: fib(int number)
     }
     else
     {
-        cout << "Calling fib with" << number - 1 << "and " << number -2 << endl;
+        cout << "Calling fib with " << number - 1 << " and " << number -2 << endl;
         return fib (number - 1) + fib (number - 2);
     }
 }
@@ -28,7 +28,12 @@ string RecursionTester :: mystery(string word)
 
 void RecursionTester :: testRecursionNumbers()
 {
-    
+    Timer recursionTimer;
+    cout << "Testing fibonacci with 10" << endl;
+    recursionTimer.startTimer();
+    cout << fib(10) << endl;
+    recursionTimer.stopTimer();
+    recursionTimer.displayInformation();
 }
 
 void RecursionTester :: testRecursionString()
