@@ -74,5 +74,4 @@ void DoubleNode<Type> :: setNext(DoubleNode<Type> * next)
     this->next = next;
 }
 
-
 #endif /* DoubleNode_hpp */

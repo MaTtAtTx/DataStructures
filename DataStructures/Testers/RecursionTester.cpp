@@ -34,17 +34,17 @@ string RecursionTester :: mystery(string word)
     }
 }
 
-string RecursionTester :: otherMystery(string word)
-{
-    if (word.length() == 1)
-    {
-        return word;
-    }
-    else
-    {
-        
-    }
-}
+//string RecursionTester :: otherMystery(string word)
+//{
+//    if (word.length() == 1)
+//    {
+//        return word;
+//    }
+//    else
+//    {
+//
+//    }
+//}
 
 void RecursionTester :: testRecursionNumbers()
 {
