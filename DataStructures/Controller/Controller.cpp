@@ -26,9 +26,12 @@ void Controller :: start()
 //    myTest3.stackVersusQueue();
 //    myTest3.queueVersusList();
     
-    RecursionTester myTest4;
-    myTest4.testRecursionNumbers();
-    myTest4.testRecursionString();
+//    RecursionTester myTest4;
+//    myTest4.testRecursionNumbers();
+//    myTest4.testRecursionString();
+    
+    SortingTester myTest5;
+    myTest5.testSorts();
     
 //    cout << "Testing the Timer class" << endl;
 //    Timer codeTimer;

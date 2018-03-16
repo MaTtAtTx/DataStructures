@@ -53,4 +53,5 @@ void SortingTester :: testSorts()
     quickSort(data, 0, data.size());
     sortTimer.stopTimer();
     sortTimer.displayInformation();
+    cout << "The number of swaps were: " << swapCount << endl;
 }
