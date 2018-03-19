@@ -226,6 +226,7 @@ void Graph<Type> :: breadthFirstTraversal(Graph<Type> & graph, int vertex)
     {
         if (!visited[*setIterator])
         {
+            //This is the recursive call
             depthFirstTraversal(currentGraph, *setIterator, visited);
         }
     }
