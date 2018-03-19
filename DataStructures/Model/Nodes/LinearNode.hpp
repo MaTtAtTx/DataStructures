@@ -17,7 +17,7 @@ using namespace std;
 template <class Type>
 class LinearNode : public Node<Type>
 {
-    //This section is availabel to the subclasses of LinearNode
+    //This section is available to the subclasses of LinearNode
 protected:
     LinearNode<Type> * next;
 public:
