@@ -45,6 +45,7 @@
 		0D38305D205827BF00E0F096 /* SortingTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SortingTester.hpp; sourceTree = "<group>"; };
 		0D8ADF03204D900C00E85FF4 /* RecursionTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RecursionTester.cpp; sourceTree = "<group>"; };
 		0D8ADF04204D900C00E85FF4 /* RecursionTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RecursionTester.hpp; sourceTree = "<group>"; };
+		0D94B38A2060024A00D3D376 /* Graph.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Graph.hpp; sourceTree = "<group>"; };
 		0DDEBB3820445EC60074935C /* DoubleNode.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DoubleNode.hpp; sourceTree = "<group>"; };
 		0DDEBB3B204465520074935C /* CircularList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CircularList.hpp; sourceTree = "<group>"; };
 		0DF0C7B52024C0BD00A05D33 /* Array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Array.hpp; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		0D40B5512031F94C00B3F302 /* NonLinear */ = {
 			isa = PBXGroup;
 			children = (
+				0D94B38A2060024A00D3D376 /* Graph.hpp */,
 			);
 			path = NonLinear;
 			sourceTree = "<group>";
