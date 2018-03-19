@@ -207,13 +207,28 @@ std::set<int> Graph<Type> :: neighbors(int vertex) const
 template <class Type>
 void Graph<Type> :: depthFirstTraversal(Graph<Type> & graph, int vertex)
 {
-    
+    bool visitedVertices[MAXIMUM];
+    assert(vertex < currentGraph.size());
+    std::fill_n(visitedVertices, currentGraph.size(), false);
+    depthFirstTraversal(currentGraph, vertex, visitedVertices);
 }
 
 template <class Type>
 void Graph<Type> :: breadthFirstTraversal(Graph<Type> & graph, int vertex)
 {
+    std::set<int> connections = currentGraph.neighbors(vertex);
+    std::set<int>::iterator setIterator;
     
+    visited[vertex] = true;
+    cout << currentGraph[vertex] << ", " << endl;
+    
+    for (setIterator = connections.begin(); setIterator != connections.end(); setIterator++)
+    {
+        if (!visited[*setIterator])
+        {
+            depthFirstTraversal(currentGraph, *setIterator, visited);
+        }
+    }
 }
 
 template <class Type>
