@@ -19,7 +19,7 @@ template <class Type>
 class Graph
 {
 private:
-    static const int MAXIMUM = 20;
+    static const int MAXIMUM = 50;
     bool adjacencyMatrix [MAXIMUM][MAXIMUM];
     int weightCostMatric [MAXIMUM][MAXIMUM];
     Type graphData[MAXIMUM];
@@ -214,7 +214,7 @@ void Graph<Type> :: depthFirstTraversal(Graph<Type> & graph, int vertex)
 }
 
 template <class Type>
-void Graph<Type> :: breadthFirstTraversal(Graph<Type> & graph, int vertex)
+void Graph<Type> :: depthFirstTraversal(Graph<Type> & graph, int vertex, bool * visited)
 {
     std::set<int> connections = currentGraph.neighbors(vertex);
     std::set<int>::iterator setIterator;
