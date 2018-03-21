@@ -261,6 +261,8 @@ int Graph<Type> :: costTraversal(Graph<Type> & graph, int vertex)
             }
         }
     }
+    
+    return cost;
 }
 
 #endif /* Graph_hpp */
