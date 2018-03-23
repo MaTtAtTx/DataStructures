@@ -30,8 +30,11 @@ void Controller :: start()
 //    myTest4.testRecursionNumbers();
 //    myTest4.testRecursionString();
     
-    SortingTester myTest5;
-    myTest5.testSorts();
+//    SortingTester myTest5;
+//    myTest5.testSorts();
+    
+    GraphTester myTest6;
+    myTest6.testGraphs();
     
 //    cout << "Testing the Timer class" << endl;
 //    Timer codeTimer;

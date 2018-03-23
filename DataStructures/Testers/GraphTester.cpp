@@ -8,6 +8,22 @@
 
 #include "GraphTester.hpp"
 
+void GraphTester :: testGraphs()
+{
+    setup();
+    compareTraversals();
+    
+}
+
+void GraphTester :: compareTraversals()
+{
+    puzzle.depthFirstTraversal(puzzle, 9);
+    puzzle.breadthFirstTraversal(puzzle, 12);
+    
+    puzzle.depthFirstTraversal(puzzle, 33);
+    puzzle.breadthFirstTraversal(puzzle, 2);
+}
+
 void GraphTester :: setup()
 {
     puzzle.addVertex("a ");
@@ -103,9 +119,4 @@ void GraphTester :: setup()
     puzzle.addEdgeCost(12, 22, 13);
     puzzle.addEdgeCost(13, 15, 88);
     puzzle.addEdgeCost(19, 13, 21);
-}
-
-void GraphTester :: compareTraversals()
-{
-    void Graph<string> :: depthFirstTraversal(Graph<String> & Puzzle, , );
 }
