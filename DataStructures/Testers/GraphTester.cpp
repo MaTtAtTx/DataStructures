@@ -107,5 +107,5 @@ void GraphTester :: setup()
 
 void GraphTester :: compareTraversals()
 {
-    
+    void Graph<string> :: depthFirstTraversal(Graph<String> & Puzzle, , );
 }
