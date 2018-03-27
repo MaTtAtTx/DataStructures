@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>513</x>
+      <x>522</x>
       <y>252</y>
       <w>396</w>
       <h>270</h>
@@ -60,11 +60,46 @@ Node&lt;Type&gt;
     <coordinates>
       <x>423</x>
       <y>315</y>
-      <w>108</w>
+      <w>117</w>
       <h>36</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 Extends</panel_attributes>
-    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>162</x>
+      <y>504</y>
+      <w>324</w>
+      <h>315</h>
+    </coordinates>
+    <panel_attributes>bg=#BA55D3
+transparency=0
+/Tree&lt;Type&gt;/
+--
+
+# root : BinaryTreeNode&lt;Type&gt; *
+
+
+--
+*Informational Methods*
+/+ getSize() : int/
+/+ getHeight() : int/
+/+ isComplete() : bool/
+/+ isBalanced() : bool/
+
+*Data Methods*
+/+ insert(Type) : void/
+/+ contains(Type) : bool/
+/+ remove(Type) : void/
+
+*Traversals*
+/+ inOrderTraversal() : void/
+/+ preOrderTraversal() : void/
+/+ postOrderTraversal() : void/
+</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
