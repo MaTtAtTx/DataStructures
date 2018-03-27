@@ -9,7 +9,6 @@
 #ifndef LinearNode_hpp
 #define LinearNode_hpp
 
-#include <iostream>
 #include "Node.hpp"
 
 using namespace std;

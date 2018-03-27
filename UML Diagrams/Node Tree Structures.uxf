@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>513</x>
+      <y>252</y>
+      <w>396</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>bg=#9400D3
+transparency=1
+BinaryTreeNode&lt;Type&gt;
+--
+
+- root : BinaryTreeNode&lt;Type&gt; *
+- left : BinaryTreeNode&lt;Type&gt; *
+- right : BinaryTreeNode&lt;Type&gt; *
+
+--
++ BinaryTreeNode() : constructor
++ BinaryTreeNode(Type data) : constructor
+
++ getRoot() : BinaryTreeNode&lt;Type&gt; *
++ getLeft() : BinaryTreeNode&lt;Type&gt; *
++ getRight() : BinaryTreeNode&lt;Type&gt; *
+
++ setRoot(BinaryTreeNode&lt;Type&gt; *) : void
++ setLeft(BinaryTreeNode&lt;Type&gt; *) : void
++ setRight(BinaryTreeNode&lt;Type&gt; *) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>135</x>
+      <y>252</y>
+      <w>297</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>bg=green
+transparency=1
+Node&lt;Type&gt;
+--
+
+#data : Type
+
+--
++ Node() : constructor
++ Node(Type data) : constructor
++ getData() : Type
++ setData(Type data) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>423</x>
+      <y>315</y>
+      <w>108</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+Extends</panel_attributes>
+    <additional_attributes>10.0;20.0;100.0;20.0</additional_attributes>
+  </element>
+</diagram>
