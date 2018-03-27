@@ -13,8 +13,6 @@
 #include <assert.h>
 #include "../../Nodes/BinaryTreeNode.hpp"
 
-using namespace std;
-
 template <class Type>
 class Tree
 {
@@ -26,12 +24,10 @@ public:
     virtual int getHeight() = 0;
     virtual bool isComplete() = 0;
     virtual bool isBalanced() = 0;
-    
     //Data Methods
     virtual void insert(Type) = 0;
     virtual bool contains(Type) = 0;
     virtual void remove(Type) = 0;
-    
     //Traversals
     virtual void inOrderTraversal() = 0;
     virtual void preOrderTraversal() = 0;
