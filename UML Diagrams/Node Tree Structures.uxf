@@ -22,13 +22,13 @@ BinaryTreeNode&lt;Type&gt;
 + BinaryTreeNode() : constructor
 + BinaryTreeNode(Type data) : constructor
 
-+ getRoot() : BinaryTreeNode&lt;Type&gt; *
-+ getLeft() : BinaryTreeNode&lt;Type&gt; *
-+ getRight() : BinaryTreeNode&lt;Type&gt; *
++ getRootNode() : BinaryTreeNode&lt;Type&gt; *
++ getLeftNode() : BinaryTreeNode&lt;Type&gt; *
++ getRightNode() : BinaryTreeNode&lt;Type&gt; *
 
-+ setRoot(BinaryTreeNode&lt;Type&gt; *) : void
-+ setLeft(BinaryTreeNode&lt;Type&gt; *) : void
-+ setRight(BinaryTreeNode&lt;Type&gt; *) : void
++ setRootNode(BinaryTreeNode&lt;Type&gt; *) : void
++ setLeftNode(BinaryTreeNode&lt;Type&gt; *) : void
++ setRightNode(BinaryTreeNode&lt;Type&gt; *) : void
 </panel_attributes>
     <additional_attributes/>
   </element>
