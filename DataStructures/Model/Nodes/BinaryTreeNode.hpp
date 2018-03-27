@@ -35,43 +35,43 @@ public:
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
-    this->root = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template <class Type>
 BinaryTreeNode<Type> :: BinaryTreeNode(Type data) : Node<Type>(data)
 {
-    this->root = nullptr;
-    this->left = nullptr;
-    this->right = nullptr;
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 //Getters
 template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRootNode()
 {
-    return root;
+    return this->root;
 }
 
 template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getLeftNode()
 {
-    return left;
+    return this->left;
 }
 
 template <class Type>
 BinaryTreeNode<Type> * BinaryTreeNode<Type> :: getRightNode()
 {
-    return right;
+    return this->right;
 }
 
 //Setters
 template <class Type>
-void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * root)
+void BinaryTreeNode<Type> :: setRootNode(BinaryTreeNode<Type> * newRoot)
 {
-    this->root = root;
+    root = newRoot;
 }
 
 template <class Type>
