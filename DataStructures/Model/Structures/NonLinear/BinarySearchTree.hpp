@@ -107,4 +107,21 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
     }
 }
 
+/*
+ In order traversal goes in the order Left, Root, Right
+ Notice that the non-revursive case does NOTHING
+ */
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
+{
+    if (inStart != nullptr)
+    {
+        cout << "Going Left" << endl;
+        inOrderTraversal(inStart->getLeftNode());
+        cout << "Node Contents: " << inStart->getData() << endl;
+        cout << "Going Right" << endl;
+        inOrderTraversal(inStart->getRightNode());;
+    }
+}
+
 #endif /* BinarySearchTree_hpp */
