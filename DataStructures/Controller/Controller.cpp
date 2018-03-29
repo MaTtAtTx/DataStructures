@@ -12,40 +12,8 @@ using namespace std;
 
 void Controller :: start()
 {
-//    ArrayTester myTest;
-//    myTest.testArrayUse();
-//    myTest.testAdvancedArray();
-    
-//    LinkedListTester myTest2;
-//    myTest2.testListBasics();
-//    myTest2.testListStrings();
-//    myTest2.testListWithData();
-    
-//    TestingStacksAndQueues myTest3;
-//    myTest3.stackVersusList();
-//    myTest3.stackVersusQueue();
-//    myTest3.queueVersusList();
-    
-//    RecursionTester myTest4;
-//    myTest4.testRecursionNumbers();
-//    myTest4.testRecursionString();
-    
-//    SortingTester myTest5;
-//    myTest5.testSorts();
-    
-    GraphTester myTest6;
-    myTest6.testGraphs();
-    
-//    cout << "Testing the Timer class" << endl;
-//    Timer codeTimer;
-//    codeTimer.startTimer();
-//    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/mjoh7008/Documents/Data Structures/DataStructures/DataStructures/Data/crime.csv");
-//    for (int index = 199; index < 215; index++)
-//    {
-//        cout << "Data at spot # " << index + 1 << ": " << myData[index] << endl;
-//    }
-//    codeTimer.stopTimer();
-//    codeTimer.displayInformation();
+    BinaryTreeTester myTest;
+    myTest.doTreeStuff();
 }
 
 void Controller :: findMaxAndMin()
