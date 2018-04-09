@@ -23,9 +23,9 @@ protected:
     bool isBalanced(BinaryTreeNode<Type> * startNode);
     bool isComplete(BinaryTreeNode<Type> * startNode, int index, int size);
     
-    void inOrderTraversal(BinaryTreeNode<Type> * inStart);
-    void preOrderTraversal(BinaryTreeNode<Type> * preStart);
-    void postOrderTraversal(BinaryTreeNode<Type> * postStart);
+    void inOrderTraversal(BinaryTreeNode<Type> * currentNode);
+    void preOrderTraversal(BinaryTreeNode<Type> * currentNode);
+    void postOrderTraversal(BinaryTreeNode<Type> * currentNode);
     
     BinaryTreeNode<Type> * getRightMostChild(BinaryTreeNode<Type> * current);
     BinaryTreeNode<Type> * getLeftMostChild(BinaryTreeNode<Type> * current);
@@ -61,6 +61,77 @@ template <class Type>
 BinarySearchTree<Type> :: BinarySearchTree()
 {
     this->root = nullptr;
+}
+
+template <class Type>
+BinarySearchTree<Type> :: ~BinarySearchTree()
+{
+    
+}
+
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal()
+{
+    inOrderTraversal(this->root);
+}
+
+template<class Type>
+void BinarySearchTree<Type> :: preOrderTraversal()
+{
+    preOrderTraversal(this->root);
+}
+
+template<class Type>
+void BinarySearchTree<Type> :: postOrderTraversal()
+{
+    postOrderTraversal(this->root);
+}
+
+/*
+ In order traversal goes in the order Left, Root, Right
+ Notice that the non-recursive case does NOTHING
+ */
+template <class Type>
+void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if (currentNode != nullptr)
+    {
+        inOrderTraversal(currentNode->getLeftNode());
+        cout << currentNode->getData() << endl;
+        inOrderTraversal(currentNode->getRightNode());
+    }
+}
+
+/*
+ Pre order traversal goes in the order Root, Left, Right
+ Great for building math problems
+ Notice that the non-recursive case does NOTHING
+ */
+template <class Type>
+void BinarySearchTree<Type> :: preOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if (currentNode != nullptr)
+    {
+        cout << currentNode->getData() << endl;
+        preOrderTraversal(currentNode->getLeftNode());
+        preOrderTraversal(currentNode->getRightNode());
+    }
+}
+
+/*
+ Post order traversal goes in the order Left, Right, Root
+ Great for destroying the tree
+ Notice that the non-recursive case does NOTHING
+ */
+template <class Type>
+void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * currentNode)
+{
+    if (currentNode != nullptr)
+    {
+        postOrderTraversal(currentNode->getLeftNode());
+        postOrderTraversal(currentNode->getRightNode());
+        cout << currentNode->getData() << endl;
+    }
 }
 
 template <class Type>
@@ -108,24 +179,6 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
 }
 
 template<class Type>
-void BinarySearchTree<Type> :: preOrderTraversal()
-{
-    
-}
-
-template<class Type>
-void BinarySearchTree<Type> :: postOrderTraversal()
-{
-    
-}
-
-template <class Type>
-BinarySearchTree<Type> :: ~BinarySearchTree()
-{
-    
-}
-
-template<class Type>
 bool BinarySearchTree<Type> :: contains(Type value)
 {
     return false;
@@ -159,33 +212,6 @@ template<class Type>
 bool BinarySearchTree<Type> :: isBalanced()
 {
     return false;
-}
-
-template <class Type>
-void BinarySearchTree<Type> :: inOrderTraversal()
-{
-    inOrderTraversal(this->root);
-}
-
-/*
- In order traversal goes in the order Left, Root, Right
- Notice that the non-revursive case does NOTHING
- */
-template <class Type>
-void BinarySearchTree<Type> :: inOrderTraversal(BinaryTreeNode<Type> * inStart)
-{
-    if (inStart != nullptr)
-    {
-        cout << "Checking left" << endl;
-        inOrderTraversal(inStart->getLeftNode());
-        cout << "Node Contents: " << inStart->getData() << endl;
-        cout << "Checking right" << endl;
-        inOrderTraversal(inStart->getRightNode());;
-    }
-    else
-    {
-        cout << "Empty sub tree - leave" << endl;
-    }
 }
 
 #endif /* BinarySearchTree_hpp */
