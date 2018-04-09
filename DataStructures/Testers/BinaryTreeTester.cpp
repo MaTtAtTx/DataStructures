@@ -10,22 +10,44 @@
 
 void BinaryTreeTester :: doTreeStuff()
 {
-    testTree.insert(3);
-    testTree.insert(1);
-    testTree.insert(2);
-    testTree.insert(-3246000);
-    testTree.insert(-12);
-    testTree.insert(7);
-    testTree.insert(5);
-    testTree.insert(6);
-    testTree.insert(8);
-    testTree.insert(5000);
-    testTree.insert(9001);
-    testTree.insert(10);
-    testTree.insert(420);
-    testTree.insert(600);
+    numberTree.insert(17);
+    numberTree.insert(1414);
+    numberTree.insert(2);
+    numberTree.insert(-195273);
+    numberTree.insert(-12);
+    numberTree.insert(14);
+    numberTree.insert(93020);
+    numberTree.insert(7777);
+    numberTree.insert(-1235);
+    numberTree.insert(10);
     
-    testTree.inOrderTraversal();
-    testTree.preOrderTraversal();
-    testTree.postOrderTraversal();
+    cout << "In Order Traversal - Numbers" << endl;
+    numberTree.inOrderTraversal();
+    cout << endl;
+    cout << "Pre Order Traversal - Numbers" << endl;
+    numberTree.preOrderTraversal();
+    cout << endl;
+    cout << "Post Order Traversal - Numbers" << endl;
+    numberTree.postOrderTraversal();
+    cout << endl;
+    
+    wordTree.insert("Bob");
+    wordTree.insert("Tom");
+    wordTree.insert("Dave");
+    wordTree.insert("Aaron");
+    wordTree.insert("Sarah");
+    wordTree.insert("Emily");
+    wordTree.insert("Michael");
+    wordTree.insert("Luke");
+    wordTree.insert("William");
+    
+    cout << "In Order Traversal - Words" << endl;
+    wordTree.inOrderTraversal();
+    cout << endl;
+    cout << "Pre Order Traversal - Words" << endl;
+    wordTree.preOrderTraversal();
+    cout << endl;
+    cout << "Post Order Traversal - Words" << endl;
+    wordTree.postOrderTraversal();
+    cout << endl;
 }
