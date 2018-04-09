@@ -46,8 +46,8 @@ public:
     
     int getSize();
     int getHeight();
-    bool isComplete();
     bool isBalanced();
+    bool isComplete();
     
     void insert(Type itemToInsert);
     bool contains(Type value);
@@ -173,6 +173,63 @@ int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
 }
 
 template <class Type>
+bool BinarySearchTree<Type> :: isBalanced()
+{
+    return isBalanced(this->root);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isBalanced(BinaryTreeNode<Type> * startNode)
+{
+    int leftHeight = 0;
+    int rightHeight = 0;
+    
+    if (startNode == nullptr)
+    {
+        return true;
+    }
+    
+    leftHeight = calculateHeight(startNode->getLeftNode());
+    rightHeight = calculateHeight(startNode->getRightNode());
+    
+    int heightDifference = abs(leftHeight - rightHeight);
+    bool leftBalanced = isBalanced(startNode->getLeftNode());
+    bool rightBalanced = isBalanced(startNode->getRightNode());
+    
+    if (heightDifference <= 1 && leftBalanced && rightBalanced)
+    {
+        return true;
+    }
+    
+    return false;
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete()
+{
+    int index = 0;
+    int size = getSize();
+    
+    return isComplete(this->root, index, size);
+}
+
+template <class Type>
+bool BinarySearchTree<Type> :: isComplete(BinaryTreeNode<Type> * startNode, int index, int size)
+{
+    if (startNode == nullptr)
+    {
+        return true;
+    }
+    
+    if (index >= size)
+    {
+        return false;
+    }
+    
+    return (isComplete(startNode->getLeftNode(), 2 * index + 1, size) && isComplete(startNode->getRightNode(), 2 * index + 2, size));
+}
+
+template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
     BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
@@ -226,18 +283,6 @@ template <class Type>
 void BinarySearchTree<Type> :: remove(Type item)
 {
     
-}
-
-template <class Type>
-bool BinarySearchTree<Type> :: isComplete()
-{
-    return false;
-}
-
-template <class Type>
-bool BinarySearchTree<Type> :: isBalanced()
-{
-    return false;
 }
 
 #endif /* BinarySearchTree_hpp */
