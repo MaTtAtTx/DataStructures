@@ -75,13 +75,13 @@ void BinarySearchTree<Type> :: inOrderTraversal()
     inOrderTraversal(this->root);
 }
 
-template<class Type>
+template <class Type>
 void BinarySearchTree<Type> :: preOrderTraversal()
 {
     preOrderTraversal(this->root);
 }
 
-template<class Type>
+template <class Type>
 void BinarySearchTree<Type> :: postOrderTraversal()
 {
     postOrderTraversal(this->root);
@@ -135,6 +135,44 @@ void BinarySearchTree<Type> :: postOrderTraversal(BinaryTreeNode<Type> * postSta
 }
 
 template <class Type>
+int BinarySearchTree<Type> :: getSize()
+{
+    int size = 0;
+    
+    size += calculateSize(this->root);
+    
+    return size;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateSize(BinaryTreeNode<Type> * startNode)
+{
+    if (startNode != nullptr)
+    {
+        return calculateSize(startNode->getLeftNode()) + calculateSize(startNode->getRightNode()) + 1;
+    }
+    
+    return 0;
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: getHeight()
+{
+    return calculateHeight(this->root);
+}
+
+template <class Type>
+int BinarySearchTree<Type> :: calculateHeight(BinaryTreeNode<Type> * startNode)
+{
+    if (startNode != nullptr)
+    {
+        return max(calculateHeight(startNode->getLeftNode()), calculateHeight(startNode->getRightNode())) + 1;
+    }
+    
+    return 0;
+}
+
+template <class Type>
 void BinarySearchTree<Type> :: insert(Type itemToInsert)
 {
     BinaryTreeNode<Type> * insertMe = new BinaryTreeNode<Type>(itemToInsert);
@@ -178,37 +216,25 @@ void BinarySearchTree<Type> :: insert(Type itemToInsert)
     }
 }
 
-template<class Type>
+template <class Type>
 bool BinarySearchTree<Type> :: contains(Type value)
 {
     return false;
 }
 
-template<class Type>
+template <class Type>
 void BinarySearchTree<Type> :: remove(Type item)
 {
     
 }
 
-template<class Type>
-int BinarySearchTree<Type> :: getSize()
-{
-    return -1;
-}
-
-template<class Type>
-int BinarySearchTree<Type> :: getHeight()
-{
-    return -1;
-}
-
-template<class Type>
+template <class Type>
 bool BinarySearchTree<Type> :: isComplete()
 {
     return false;
 }
 
-template<class Type>
+template <class Type>
 bool BinarySearchTree<Type> :: isBalanced()
 {
     return false;
