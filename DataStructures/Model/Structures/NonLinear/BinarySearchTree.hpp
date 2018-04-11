@@ -475,4 +475,18 @@ BinaryTreeNode<Type> * BinarySearchTree<Type> :: getLeftMostChild(BinaryTreeNode
     return currentNode;
 }
 
+template <class Type>
+Type BinarySearchTree<Type> :: findMinimum()
+{
+    assert(this->root != nullptr);
+    return getLeftMostChild(this->root)->getData();
+}
+
+template <class Type>
+Type BinarySearchTree<Type> :: findMaximum()
+{
+    assert(this->root != nullptr);
+    return getRightMostChild(this->root)->getData();
+}
+
 #endif /* BinarySearchTree_hpp */
