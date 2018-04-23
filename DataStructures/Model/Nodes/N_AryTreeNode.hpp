@@ -47,7 +47,10 @@ N_AryTreeNode<Type> :: N_AryTreeNode(Type data) : Node<Type>(data)
 template <class Type>
 N_AryTreeNode<Type> :: ~N_AryTreeNode()
 {
-    nodes.clear();
+    for (int index = nodes.size() - 1; index >= 0; index--)
+    {
+        delete nodes[index];
+    }
 }
 
 template <class Type>
