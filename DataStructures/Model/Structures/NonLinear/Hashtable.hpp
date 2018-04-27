@@ -24,12 +24,14 @@ private:
 public:
     Hashtable();
     ~Hashtable();
+    
+    void insert(Type data);
 };
 
 template <class Type>
 Hashtable<Type> :: Hashtable()
 {
-    internalStorage = new HashNode<Type>[101];
+    internalStorage = new HashNode<Type>*[101];
     size = 0;
     loadFactor = .80;
 }
@@ -48,6 +50,12 @@ long Hashtable<Type> :: getNextPrime(long currentNumber)
 
 template <class Type>
 void Hashtable<Type> :: resize()
+{
+    
+}
+
+template <class Type>
+void Hashtable<Type> :: insert(Type data)
 {
     
 }
