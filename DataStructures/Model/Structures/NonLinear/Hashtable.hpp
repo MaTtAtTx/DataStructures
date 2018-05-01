@@ -10,6 +10,8 @@
 #define Hashtable_hpp
 
 #include "../Nodes/HashNode.hpp"
+#include <assert.h>
+#include <cmath>
 
 template <class Type>
 class Hashtable
@@ -93,7 +95,8 @@ bool Hashtable<Type> :: isPrime(long current)
 template <class Type>
 long Hashtable<Type> :: findPosition(HashNode<Type> * insert)
 {
-    return -1;
+    long insertPosition = insert->getKey() % this->capacity;
+    return insertPosition;
 }
 
 template <class Type>
