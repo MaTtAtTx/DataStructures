@@ -106,7 +106,7 @@ long Hashtable<Type> :: handleCollision(long currentPosition)
     
     for (long position = currentPosition + shift; position != currentPosition; position += shift)
     {
-        if (position >=  capacity)
+        if (position >= capacity)
         {
             position = position % capacity;
         }
@@ -116,6 +116,7 @@ long Hashtable<Type> :: handleCollision(long currentPosition)
             return position
         }
     }
+    
     return -1;
 }
 
