@@ -164,9 +164,9 @@ void Hashtable<Type> :: resize()
     long oldCapacity = this->capacity;
     this->capacity = updatedCapacity;
     
-    for (ong index = 0; index < oldCapacity; index++)
+    for (long index = 0; index < oldCapacity; index++)
     {
-        if (hashTalbeStorage[index] != nullptr)
+        if (internalStorage[index] != nullptr)
         {
             HashNode<Type> * temp = internalStorage[index];
             
@@ -177,7 +177,7 @@ void Hashtable<Type> :: resize()
             }
             else
             {
-                long updatedPosition = handleCollision(temp, position);
+                long updatedPosition = handleCollision(position);
                 if (updatedPosition != -1)
                 {
                     tempStorage[updatedPosition] = temp;
@@ -202,7 +202,7 @@ void Hashtable<Type> :: insert(Type data)
     
     if (internalStorage[index] == nullptr)
     {
-        tempStorage[index] = temp;
+        internalStorage[index] = temp;
     }
     else
     {
