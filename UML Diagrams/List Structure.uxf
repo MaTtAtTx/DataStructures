@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>6</zoom_level>
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>576</x>
-      <y>300</y>
-      <w>288</w>
-      <h>114</h>
+      <x>600</x>
+      <y>360</y>
+      <w>480</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>bg=cyan
 LinearNode&lt;Type&gt;
@@ -27,10 +27,10 @@ LinearNode&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
-      <y>408</y>
-      <w>42</w>
-      <h>66</h>
+      <x>800</x>
+      <y>540</y>
+      <w>70</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -39,10 +39,10 @@ public</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>606</x>
-      <y>462</y>
-      <w>198</w>
-      <h>96</h>
+      <x>650</x>
+      <y>630</y>
+      <w>330</w>
+      <h>160</h>
     </coordinates>
     <panel_attributes>bg=green
 Node&lt;Type&gt;
@@ -61,10 +61,10 @@ Node&lt;Type&gt;
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>276</x>
-      <y>282</y>
-      <w>210</w>
-      <h>132</h>
+      <x>100</x>
+      <y>330</y>
+      <w>350</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>bg=#007EFF
 /List&lt;Type&gt;/
@@ -86,10 +86,10 @@ Node&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>480</x>
-      <y>354</y>
-      <w>108</w>
-      <h>30</h>
+      <x>440</x>
+      <y>450</y>
+      <w>180</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
@@ -99,10 +99,10 @@ m2=0</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>264</x>
-      <y>456</y>
-      <w>246</w>
-      <h>192</h>
+      <x>80</x>
+      <y>620</y>
+      <w>410</w>
+      <h>320</h>
     </coordinates>
     <panel_attributes>bg=#00BFFF
 LinkedList&lt;Type&gt;
@@ -131,10 +131,10 @@ LinkedList&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>372</x>
-      <y>408</y>
-      <w>42</w>
-      <h>60</h>
+      <x>260</x>
+      <y>540</y>
+      <w>70</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -143,10 +143,10 @@ public</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>396</y>
-      <w>84</w>
-      <h>150</h>
+      <x>480</x>
+      <y>520</y>
+      <w>140</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
@@ -156,10 +156,10 @@ m2=0-n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>744</y>
-      <w>270</w>
-      <h>150</h>
+      <x>630</x>
+      <y>1100</y>
+      <w>450</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>bg=#357DC0
 Queue
@@ -183,10 +183,10 @@ Queue
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>846</x>
-      <y>432</y>
-      <w>420</w>
-      <h>150</h>
+      <x>1050</x>
+      <y>580</y>
+      <w>700</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>bg=#00BFAA
 transparency=1
@@ -211,10 +211,10 @@ DoubleNode&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>798</x>
-      <y>492</y>
-      <w>60</w>
-      <h>24</h>
+      <x>970</x>
+      <y>680</y>
+      <w>100</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -223,10 +223,10 @@ public</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>594</x>
-      <y>84</y>
-      <w>246</w>
-      <h>180</h>
+      <x>630</x>
+      <y>0</y>
+      <w>410</w>
+      <h>300</h>
     </coordinates>
     <panel_attributes>bg=#00BFFF
 CircularList&lt;Type&gt;
@@ -254,10 +254,10 @@ CircularList&lt;Type&gt;
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>402</x>
-      <y>138</y>
-      <w>204</w>
-      <h>156</h>
+      <x>310</x>
+      <y>90</y>
+      <w>340</w>
+      <h>260</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -266,10 +266,10 @@ public</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>834</x>
-      <y>132</y>
-      <w>288</w>
-      <h>312</h>
+      <x>1030</x>
+      <y>80</y>
+      <w>480</w>
+      <h>520</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 
@@ -279,10 +279,10 @@ m2=0-n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>216</x>
-      <y>762</y>
-      <w>270</w>
-      <h>144</h>
+      <x>0</x>
+      <y>1130</y>
+      <w>450</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>bg=#357DC0
 Stack
@@ -305,10 +305,10 @@ Stack
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>606</y>
-      <w>240</w>
-      <h>150</h>
+      <x>480</x>
+      <y>870</y>
+      <w>400</w>
+      <h>250</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>
@@ -317,10 +317,10 @@ public</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>354</x>
-      <y>642</y>
-      <w>42</w>
-      <h>132</h>
+      <x>230</x>
+      <y>930</y>
+      <w>70</w>
+      <h>220</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;-
 public</panel_attributes>

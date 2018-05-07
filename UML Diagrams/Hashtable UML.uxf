@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>12</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>696</x>
+      <y>168</y>
+      <w>480</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>bg=#a2c1f1
+transparency=1
+Hashtable&lt;Type&gt;
+--
+
+- internalStorage : HashNode&lt;Type&gt; **
+- size : long
+- capacity : long
+- loadFactor : double
+
+--
+
++ Hashtable() : constructor
++ ~HashTable() : destructor
+
++ get(long index) : HashNode&lt;Type&gt; *
++ contains(HashNode&lt;Type&gt; * value) : bool
++ insert(Type data) : void
++ getSize() : long
+
+- getNextPrime() : long
+- isPrime(long current) : bool
+- resize() : void
+- findPosition(HashNode&lt;Type&gt; * insertedNode) : long
+- handleCollision(long index) : long</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>300</y>
+      <w>396</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>bg=green
+Node&lt;Type&gt;
+--
+
+# data : Type
+
+--
++ Node() : constructor
++ Node(Type data) : constructor
++ getData() : Type
++ setData(Type data) : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>624</y>
+      <w>396</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>bg=cyan
+HashNode&lt;Type&gt;
+--
+
+- key : long
+
+--
++ HashNode() : constructor
++ HashNode(Type data) : constructor
++ getData() : Type
++ getKey() const : long</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>480</y>
+      <w>84</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+public</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>588</y>
+      <w>456</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+0-n</panel_attributes>
+    <additional_attributes>340.0;10.0;340.0;140.0;10.0;140.0</additional_attributes>
+  </element>
+</diagram>
